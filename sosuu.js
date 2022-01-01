@@ -19,6 +19,15 @@
                 re.appendChild(paragraph);
                 return;
             }
+            if (isNaN(x)){
+                re.innerText="";
+                res.innerText="";
+                const paragraph=document.createElement('p');
+                const result=("自然数を入力してください");
+                paragraph.innerText=result;
+                re.appendChild(paragraph);
+                return;
+            }
             if (l===0){
                 return;
             }
