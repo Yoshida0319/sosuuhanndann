@@ -10,16 +10,9 @@
         botann.onclick = ()=>{
             const x=tameshi.value;
             const l=x.length;
-            if (x==1 || x<=0){
-                re.innerText="";
-                res.innerText="";
-                const paragraph=document.createElement('p');
-                const result=(x + "は素数ではありません");
-                paragraph.innerText=result;
-                re.appendChild(paragraph);
+            if (l==0){
                 return;
-            }
-            if (isNaN(x)){
+            } else if (isNaN(x)){
                 re.innerText="";
                 res.innerText="";
                 const paragraph=document.createElement('p');
@@ -27,8 +20,13 @@
                 paragraph.innerText=result;
                 re.appendChild(paragraph);
                 return;
-            }
-            if (l===0){
+            } else if (x==1 || x<=0){
+                re.innerText="";
+                res.innerText="";
+                const paragraph=document.createElement('p');
+                const result=(x + "は素数ではありません");
+                paragraph.innerText=result;
+                re.appendChild(paragraph);
                 return;
             }
             const y=Math.sqrt(x);
