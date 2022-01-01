@@ -51,6 +51,7 @@
                     let ok=Math.floor(o);
                     if(i===a.length){
                         re.innerText="";
+                        res.innerText="";
                         const paragraph=document.createElement('p');
                         const result=("この数字は素数です");
                         paragraph.innerText=result;
