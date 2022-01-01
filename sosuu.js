@@ -57,6 +57,7 @@
                         re.appendChild(paragraph);
                     } else if(ok===o){
                         re.innerText="";
+                        res.innerText="";
                         const paragraph=document.createElement('p');
                         const result=("この数字は素数ではありません");
                         paragraph.innerText=result;
