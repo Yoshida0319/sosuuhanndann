@@ -53,14 +53,14 @@
                         re.innerText="";
                         res.innerText="";
                         const paragraph=document.createElement('p');
-                        const result=("この数字は素数です");
+                        const result=(b + "は素数です");
                         paragraph.innerText=result;
                         re.appendChild(paragraph);
                     } else if(ok===o){
                         re.innerText="";
                         res.innerText="";
                         const paragraph=document.createElement('p');
-                        const result=("この数字は素数ではありません");
+                        const result=(b + "は素数ではありません");
                         paragraph.innerText=result;
                         re.appendChild(paragraph);
                         const para=document.createElement('p');
