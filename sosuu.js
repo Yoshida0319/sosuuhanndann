@@ -10,7 +10,7 @@
         botann.onclick = ()=>{
             const x=tameshi.value;
             const l=x.length;
-            if (x==1 || x>=0){
+            if (x==1 || x<=0){
                 re.innerText="";
                 res.innerText="";
                 const paragraph=document.createElement('p');
